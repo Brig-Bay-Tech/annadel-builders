@@ -1,0 +1,29 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+
+const projects = [
+  { title: 'Pine Flat Modern Home', image: '/images/OuEdit01_24-e1737965608575.jpg', href: '/portfolio/in-progress/pine-flat-modern-home/' },
+  { title: 'Shiloh Ridge', image: '/images/06A8618-4-.jpg', href: '/portfolio/in-progress/shiloh-ridge/' },
+];
+---
+
+<Layout title="In Progress – Annadel Builders Inc." description="View current in-progress custom home projects by Annadel Builders.">
+  <PageHeader title="In-Progress Projects" />
+
+  <section class="max-w-container mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-8">
+      {projects.map(project => (
+        <a href={project.href} class="group block overflow-hidden">
+          <div class="relative overflow-hidden aspect-[4/3]">
+            <img src={project.image} alt={project.title} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
+              <span class="text-white text-lg font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300">{project.title}</span>
+            </div>
+          </div>
+          <h3 class="mt-3 text-primary text-center font-normal text-[18px]">{project.title}</h3>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

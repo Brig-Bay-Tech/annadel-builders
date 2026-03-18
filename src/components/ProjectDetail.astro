@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  image: string;
+  images?: string[];
+}
+const { title, image, images = [] } = Astro.props;
+---
+
+<section class="max-w-container mx-auto px-4 py-16">
+  <div class="mb-8">
+    <img src={image} alt={title} class="w-full h-auto max-h-[600px] object-cover" />
+  </div>
+  <div class="prose max-w-3xl mx-auto">
+    <slot />
+  </div>
+  {images.length > 0 && (
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+      {images.map((img, i) => (
+        <img src={img} alt={`${title} - Photo ${i + 1}`} class="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
+      ))}
+    </div>
+  )}
+</section>

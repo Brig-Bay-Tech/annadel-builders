@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<Layout title="About – Annadel Builders Inc." description="Learn about Annadel Builders Inc., Sonoma County fine home builders focused on craftsmanship and sustainability.">
+  <PageHeader title="About" bgImage="/images/Sobre_Vista_29-1-1024x733.jpg" />
+
+  <section class="max-w-container mx-auto px-4 py-16">
+    <div class="flex flex-col md:flex-row gap-12 items-start">
+      <div class="md:w-1/2">
+        <div class="bg-muted/10 p-8 mb-8 italic text-lg leading-relaxed">
+          <p>To build finely crafted sustainable homes. To employ conscientious quality oriented people. To improve the environment of our employees, our clients, and our community through our work as builders. To balance work flow with highly dependable service. To continually strive for excellence through training and dedication.</p>
+        </div>
+        <p class="mt-6">Learn more about Annadel Builders and our team of Sonoma County fine home builders. <a href="/contact/" class="text-teal hover:underline">Contact us</a> today at <a href="tel:7075796282" class="text-teal hover:underline">(707) 579-6282</a> or <a href="mailto:info@annadelbuildersinc.com" class="text-teal hover:underline">send us an email</a> if you would like to set up a time to meet with our team or to generate an estimate for your project proposal. We look forward to working with you!</p>
+      </div>
+      <div class="md:w-1/2">
+        <img src="/images/RK.jpg" alt="Reuben Jacobsen - Annadel Builders" class="w-full h-auto rounded shadow-lg" loading="lazy" />
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+---
+
+<Layout title="Services – Annadel Builders Inc." description="Annadel Builders offers custom home building, construction management, estate development, and fire rebuild services in Sonoma County.">
+  <PageHeader title="Services" bgImage="/images/Service-Page-body-Sobre_Vista_34-800x533-1.jpg" />
+
+  <section class="max-w-container mx-auto px-4 py-16">
+    <p class="text-lg text-center max-w-3xl mx-auto">We are a dynamic and passionate group of experienced construction craftsmen and professionals with a deep understanding of the building process. We believe in value, trust, and delivering high quality results.</p>
+
+    <div class="mt-12 space-y-8">
+      <div class="flex flex-col md:flex-row gap-8 items-center">
+        <div class="md:w-1/2">
+          <img src="/images/Construction-Body-building.jpeg" alt="Construction management" class="w-full h-auto" loading="lazy" />
+        </div>
+        <div class="md:w-1/2">
+          <p>Annadel Builders, Inc. is focused on building high-end custom homes and estates of the highest quality. We offer complete services, from pre-construction—including estimations, material comparison and research, value engineering, scheduling, and permit assistance—through building occupancy. Our team of Sonoma County fine home builders serves homeowners throughout Northern California, including Napa, Sonoma, and Marin County.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+        <div class="md:w-1/2">
+          <img src="/images/Service-page-body-2-055_Annadel_Final-XL.jpg" alt="Scheduling and planning" class="w-full h-auto" loading="lazy" />
+        </div>
+        <div class="md:w-1/2">
+          <p>Annadel Builders uses best scheduling practices and techniques, including specialized scheduling software that assists us in managing the expected completion date for project. This advanced approach also allows us to monitor and control the progress in real time, while anticipating potential impacts and decision target dates. We believe this transparency brings value to our clients and we remain committed to a systematic approach to planning. The schedule is maintained throughout the project lifecycle as a roadmap to completion.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Links -->
+    <div class="mt-16 grid md:grid-cols-3 gap-8">
+      <a href="/services/construction-management-in-sonoma-county/" class="group text-center">
+        <img src="/images/Craftsman-Body-MG_0155-1-800x703-1.jpg" alt="Construction Management" class="w-full h-64 object-cover mb-4" loading="lazy" />
+        <h3 class="text-primary font-medium group-hover:text-accent transition">Construction Management</h3>
+      </a>
+      <a href="/services/sonoma-county-building-estate-development/" class="group text-center">
+        <img src="/images/Sobre_Vista_32-Kitchen-and-Dining-1-768x570-1.jpg" alt="Building & Estate Development" class="w-full h-64 object-cover mb-4" loading="lazy" />
+        <h3 class="text-primary font-medium group-hover:text-accent transition">Building &amp; Estate Development</h3>
+      </a>
+      <a href="/services/fire-rebuilds-in-sonoma-county/" class="group text-center">
+        <img src="/images/Santa-Rosa-Foothills-Fire-Rebuild-sonoma-3-1-1200x800-1.png" alt="Fire Rebuilds" class="w-full h-64 object-cover mb-4" loading="lazy" />
+        <h3 class="text-primary font-medium group-hover:text-accent transition">Fire Rebuilds</h3>
+      </a>
+    </div>
+  </section>
+</Layout>

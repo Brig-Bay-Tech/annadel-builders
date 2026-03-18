@@ -1,0 +1,12 @@
+---
+interface Props {
+  title: string;
+  bgImage?: string;
+}
+const { title, bgImage } = Astro.props;
+---
+
+<section class="relative h-[400px] max-md:h-[250px] flex items-center justify-center bg-cover bg-center" style={bgImage ? `background-image: url('${bgImage}')` : 'background-color: #24272d'}>
+  {bgImage && <div class="absolute inset-0 bg-black/40"></div>}
+  <h1 class="relative z-10 text-white text-[36px] font-montserrat font-light text-center px-4">{title}</h1>
+</section>
