@@ -7,16 +7,51 @@ import PageHeader from '../components/PageHeader.astro';
   <PageHeader title="About" bgImage="/images/Sobre_Vista_29-1-1024x733.jpg" />
 
   <section class="max-w-[1140px] mx-auto px-4 py-16">
-    <div class="flex flex-col md:flex-row gap-12 items-start">
+    <h2 class="text-primary text-center">Sonoma County Fine Home Builders</h2>
+
+    <div class="flex flex-col md:flex-row gap-12 items-start mt-8">
       <div class="md:w-1/2">
-        <div class="bg-muted/10 p-8 mb-8 italic text-lg leading-relaxed">
-          <p>To build finely crafted sustainable homes. To employ conscientious quality oriented people. To improve the environment of our employees, our clients, and our community through our work as builders. To balance work flow with highly dependable service. To continually strive for excellence through training and dedication.</p>
-        </div>
-        <p class="mt-6">Learn more about Annadel Builders and our team of Sonoma County fine home builders. <a href="/contact/" class="text-teal hover:underline">Contact us</a> today at <a href="tel:7075796282" class="text-teal hover:underline">(707) 579-6282</a> or <a href="mailto:info@annadelbuildersinc.com" class="text-teal hover:underline">send us an email</a> if you would like to set up a time to meet with our team or to generate an estimate for your project proposal. We look forward to working with you!</p>
+        <p>We specialize in crafting exceptional homes throughout Sonoma, Napa, Mendocino, and Marin counties. With a team of highly skilled craftsmen and professionals, we are dedicated to delivering unparalleled quality and precision in every project. Our commitment to excellence extends beyond aesthetics—we integrate the latest technology and sustainable building practices, ensuring each home is as efficient and forward-thinking as it is beautifully designed.</p>
+        <p class="mt-4">At Annadel Builders, our work is guided by a steadfast commitment to four key principles:</p>
+        <ul class="mt-4 space-y-4 list-disc pl-5">
+          <li><strong>Stewardship &amp; Service</strong> – We are committed to managing our clients' resources with integrity and care. Our dedication extends beyond construction; we foster lasting relationships built on trust, reliability, and excellence, ensuring our service continues long after the project is complete.</li>
+          <li><strong>Quality Craftsmanship</strong> – Our passion lies in constructing finely built homes for clients with exacting standards. With decades of combined experience, our craftsmen and project managers bring unparalleled expertise to every stage of the process—from material selection and construction to final occupancy—ensuring meticulous attention to detail and flawless execution.</li>
+          <li><strong>Environmental Responsibility</strong> – Sustainability is at the heart of what we do. We build with a deep respect for the natural beauty of our surroundings, incorporating environmentally conscious practices that honor the landscapes in which we live and work.</li>
+          <li><strong>Technology</strong> – We blend time-honored craftsmanship with cutting-edge technology to deliver the highest-quality results. By utilizing the most advanced tools and methods available today, we ensure efficiency, precision, and superior outcomes for our clients.</li>
+        </ul>
       </div>
       <div class="md:w-1/2">
-        <img src="/images/RK.jpg" alt="Reuben Jacobsen - Annadel Builders" class="w-full h-auto rounded shadow-lg" loading="lazy" />
+        <img src="/images/RK.jpg" alt="Annadel Builders Team" class="w-full h-auto" loading="lazy" />
       </div>
     </div>
+  </section>
+
+  <!-- Our Passion -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-[1140px] mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="md:w-1/3">
+          <h2 class="text-primary">Our Passion</h2>
+        </div>
+        <div class="md:w-2/3">
+          <p class="italic text-lg">To build finely crafted sustainable homes. To employ conscientious quality oriented people. To improve the environment of our employees, our clients, and our community through our work as builders. To balance work flow with highly dependable service. To continually strive for excellence through training and dedication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Richard Kirby -->
+  <section class="max-w-[1140px] mx-auto px-4 py-16">
+    <h2 class="text-primary text-center">Meet Richard Kirby, LEED Accredited Professional</h2>
+    <div class="mt-8 space-y-4">
+      <p>Richard began building as a child and pursued his passion in college with a degree in Construction Management. After graduating from Cal Poly, Richard went on to manage large projects for a major construction company, and later worked for high-end residential builders in the Bay Area. In 2003, he established Kirby Construction, with the simple idea of providing quality construction to clients in the North Bay, where he grew up and is now raising his family. After an impressive amount of growth in managing both commercial and residential projects over a course of 13+ years, he decided to pursue his passion of high-end residential building. In 2016, he stepped out of Kirby Construction, and started Annadel Builders, Inc.</p>
+      <p>The team at Annadel Builders is committed to staying in the forefront of the latest residential building techniques and trends. This commitment requires immense effort and dedication. Staying on top of his continued education, Richard attended classes at Sonoma State University and also taught Construction Management classes (Scheduling and Estimating) at Santa Rosa Junior College. He also participates in educational seminars and courses at the local chapter of the American Institute of Architects (AIA), Construction Specifications Institute (CSI), and has obtained his Leadership in Energy &amp; Environmental Design (LEED) AP (Energy and Environmental Design Accredited Person). Passionate for excellence in his field, Richard is continually looking for opportunities to educate himself and his team in the highest quality, the most current, and the most advanced construction practices.</p>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="max-w-[1140px] mx-auto px-4 py-16">
+    <h2 class="text-primary text-center">Contact Our Napa &amp; Sonoma County Home Builders</h2>
+    <p class="mt-4 text-center">Learn more about Annadel Builders and our team of Sonoma County fine home builders. <a href="/contact/" class="text-teal hover:underline">Contact us</a> today at <a href="tel:7075796282" class="text-teal hover:underline">(707) 579-6282</a> or <a href="mailto:info@annadelbuildersinc.com" class="text-teal hover:underline">send us an email</a> if you would like to set up a time to meet with our team or to generate an estimate for your project proposal. We look forward to working with you!</p>
   </section>
 </Layout>
