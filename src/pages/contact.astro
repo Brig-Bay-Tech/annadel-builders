@@ -4,21 +4,64 @@ import PageHeader from '../components/PageHeader.astro';
 ---
 
 <Layout title="Contact – Annadel Builders Inc." description="Contact Annadel Builders Inc. for custom home building in Sonoma County. Call (707) 579-6282.">
-  <PageHeader title="Contact" />
+  <PageHeader title="Contact" bgImage="/images/Sonoma-Dwelling-by-Annadel-Builders-scaled-1.jpg" />
 
-  <section class="max-w-[1140px] mx-auto px-4 py-16">
-    <div class="max-w-3xl mx-auto">
-      <p class="text-lg mb-8">Creating beautiful projects for our clients is more than our job—it's our passion. At Annadel Builders, Inc., our Napa County fine home builders approach each aspect of home building with methodology and care, from pre-construction through occupancy. In the initial pre-construction process, our team facilitates project price estimates, material research, assistance in obtaining the proper permits, scheduling, plans, and more.</p>
+  <section class="max-w-[1140px] mx-auto px-4 py-16 text-center">
+    <h2 class="text-primary text-[36px]">Sonoma County Fine Home Builders</h2>
+    <p class="text-muted text-[18px] mt-2">Build with Intention</p>
+    <div class="w-[71%] mx-auto border-t-[3px] border-muted my-[15px]"></div>
+  </section>
 
-      <p class="mb-8">We work closely with each and every client to establish well-laid, comprehensive plans from the outset. We'd love to hear about your project and whether we can help you achieve your goals. Annadel Builders works with clients building home sites throughout the North Bay, including Sonoma, Napa, Marin, and Mendocino counties.</p>
+  <section class="max-w-[1140px] mx-auto px-4 pb-16">
+    <div class="flex flex-col md:flex-row gap-12">
+      <!-- Left Column: Contact Info + Hours -->
+      <div class="md:w-1/2">
+        <h3 class="text-primary font-bold text-[18px]">Annadel Builders Inc.</h3>
+        <p class="mt-4">4010 Montecito Avenue<br />Santa Rosa, California 95409<br />Phone: <a href="tel:7075796282" class="text-teal hover:underline">707-579-6282</a></p>
 
-      <div class="bg-gray-50 p-8 rounded-lg">
-        <h2 class="text-primary text-2xl mb-6">Get In Touch</h2>
-        <div class="space-y-4">
-          <p><strong>Annadel Builders Inc.</strong></p>
-          <p>4010 Montecito Avenue<br />Santa Rosa, California 95409</p>
-          <p>Phone: <a href="tel:7075796282" class="text-teal hover:underline">(707) 579-6282</a></p>
-          <p>Email: <a href="mailto:info@annadelbuildersinc.com" class="text-teal hover:underline">info@annadelbuildersinc.com</a></p>
+        <table class="mt-8 text-[17px]">
+          <tbody>
+            <tr><td class="pr-12 py-1">Monday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr><td class="pr-12 py-1">Tuesday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr><td class="pr-12 py-1">Wednesday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr><td class="pr-12 py-1">Thursday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr><td class="pr-12 py-1">Friday</td><td>8:00 AM – 5:00 PM</td></tr>
+            <tr><td class="pr-12 py-1">Saturday</td><td>Closed</td></tr>
+            <tr><td class="pr-12 py-1">Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+
+        <p class="mt-8">Creating beautiful projects for our clients is more than our job—it's our passion. At Annadel Builders, Inc., our Napa County fine home builders approach each aspect of home building with methodology and care, from pre-construction through occupancy. In the initial pre-construction process, our team facilitates project price estimates, material research, assistance in obtaining the proper permits, scheduling, plans, and more.</p>
+
+        <p class="mt-4">We work closely with each and every client to establish well-laid, comprehensive plans from the outset. We'd love to hear about your project and whether we can help you achieve your goals. Annadel Builders works with clients building home sites throughout the North Bay, including Sonoma, Napa, Marin, and Mendocino counties.</p>
+      </div>
+
+      <!-- Right Column: Contact Form -->
+      <div class="md:w-1/2">
+        <div class="bg-gray-50 p-8">
+          <h2 class="text-primary text-2xl mb-6">Contact Us</h2>
+          <form action="https://formspree.io/f/info@annadelbuildersinc.com" method="POST" class="space-y-4">
+            <div>
+              <label class="block font-bold text-sm mb-1">Name</label>
+              <div class="flex gap-2">
+                <input type="text" name="first_name" placeholder="First" class="w-1/2 border border-gray-300 p-2 rounded" required />
+                <input type="text" name="last_name" placeholder="Last" class="w-1/2 border border-gray-300 p-2 rounded" />
+              </div>
+            </div>
+            <div>
+              <label class="block font-bold text-sm mb-1">Email</label>
+              <input type="email" name="email" class="w-full border border-gray-300 p-2 rounded" required />
+            </div>
+            <div>
+              <label class="block font-bold text-sm mb-1">Phone</label>
+              <input type="tel" name="phone" class="w-full border border-gray-300 p-2 rounded" />
+            </div>
+            <div>
+              <label class="block font-bold text-sm mb-1">Message</label>
+              <textarea name="message" rows="5" class="w-full border border-gray-300 p-2 rounded" required></textarea>
+            </div>
+            <button type="submit" class="bg-accent text-white px-6 py-2 font-bold uppercase tracking-wide hover:opacity-90 transition">Submit</button>
+          </form>
         </div>
       </div>
     </div>
